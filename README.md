@@ -98,7 +98,7 @@ petcircleqaassessment/
 
 Complete end-to-end CI/CD is accomplished using:
 
-* [CircleCI](https://circleci.com/gh/PODHUPU/qassessment/tree/master)
+* [CircleCI](https://circleci.com/gh/PODHUPU/petcircle/tree/master)
 * [DockerHub](https://hub.docker.com/)
 
 ### API Tests
