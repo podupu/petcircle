@@ -1,0 +1,23 @@
+.vscode
+yarn.lock
+package-lock.json
+test-results
+performanceTests
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Test reports
+playwright-report/
+allure-results/
+allure-report/
+
+# Coverage reports
+coverage/
+
+# Logs
+*.log

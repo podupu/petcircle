@@ -1,0 +1,36 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.8  # Use the Docker image if you need Python for other steps
+    steps:
+      - checkout  # Checkout your code from the repository
+
+      - setup_remote_docker:
+          version: 20.10.7
+          docker_layer_caching: true  # Optional: enables layer caching
+
+      - run:
+          name: Build Docker Image
+          command: |
+            docker build -t my-playwright-app .
+
+      - run:
+          name: Run Playwright Tests
+          command: |
+            docker run --rm -v $PWD/playwright-report:/repo/playwright-report my-playwright-app
+            # Ensure the report directory is mounted so it can be accessed after tests run
+
+      - store_artifacts:
+          path: playwright-report  # Path to the Playwright report directory
+          destination: playwright-report  # Directory in CircleCI where artifacts will be stored
+
+      - store_test_results:
+          path: playwright-report  # Path to the test results JSON file or directory
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - build
