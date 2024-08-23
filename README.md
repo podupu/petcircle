@@ -106,7 +106,7 @@ Complete end-to-end CI/CD is accomplished using:
 <img src="img/circleci_pipeline.png" width="900">
 
 1. When a user pushes code to GitHub, the CircleCI workflow is triggered and executes the following steps:
-    * **Step 1**: Creates a Docker image of the test code and pushes it to DockerHub.
+    * **Step 1**: Creates a Docker image of the test code.
     * **Step 2**: Executes API tests inside a Docker container using the image created in Step 1, generates a Playwright test report, and stores it under Artifacts.
 
 ### Reports
