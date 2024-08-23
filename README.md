@@ -25,12 +25,12 @@ To install the project, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/podupu/petcircleqaassessment.git
+   git clone https://github.com/podupu/petcircle.git
    ```
 
 2. **Navigate to the project directory**:
    ```bash
-   cd petcircleqaassessment
+   cd petcircle
    ```
 
 3. **Install dependencies**:

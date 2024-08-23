@@ -20,8 +20,6 @@ jobs:
           name: Run Playwright Tests
           command: |
             docker run --rm -v $PWD/playwright-report:/repo/playwright-report my-playwright-app
-            # Ensure the report directory is mounted so it can be accessed after tests run
-
       - store_artifacts:
           path: playwright-report  # Path to the Playwright report directory
           destination: playwright-report  # Directory in CircleCI where artifacts will be stored
