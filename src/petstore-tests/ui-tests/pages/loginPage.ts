@@ -15,6 +15,10 @@ export class LoginPage {
     await this.page.goto("/");
   }
 
+  async getErrorMessage() {
+    return this.page.locator('[data-test="error"]').textContent();
+  }
+
   async login(username: string, password: string) {
     await this.page.fill(this.usernameInput, username);
     await this.page.fill(this.passwordInput, password);

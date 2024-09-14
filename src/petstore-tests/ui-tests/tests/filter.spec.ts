@@ -8,10 +8,10 @@ test("Filter products by price from low to high", async ({ page }) => {
 
   await loginPage.navigate();
   await loginPage.login("standard_user", "secret_sauce");
-  await inventoryPage.filterByPriceLowToHigh();
+  await inventoryPage.filterBySelection('lohi');
   const firstProduct = await page
     .locator(inventoryPage.firstProduct)
     .first()
     .textContent();
-  expect(firstProduct).toBe("Sauce Labs Onesie"); // Example product name
+  expect(firstProduct).toBe("Sauce Labs Onesie"); 
 });
