@@ -86,7 +86,7 @@ petcircleqaassessment/
 
 * Run API tests:
     ```bash
-    yarn run pw:api
+    yarn run api
     ```
 
 * Run web tests:

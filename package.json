@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pw:headed:chrome": "playwright test --headed --config ./playwright.config.ts --project=web",
-    "pw:headless:chrome": "playwright test --config ./playwright.config.ts --project=web",
-    "pw:headless:all": "playwright test --config ./playwright.config.ts",
-    "pw:interactive": "playwright test --headed --ui --config ./playwright.config.ts",
-    "pw:api": "playwright test --config ./playwright.config.ts --project=api-tests"
+    "headed:chrome": "playwright test --headed --config ./playwright.config.ts --project=web",
+    "headless:chrome": "playwright test --config ./playwright.config.ts --project=web",
+    "headless:all": "playwright test --config ./playwright.config.ts",
+    "interactive": "playwright test --headed --ui --config ./playwright.config.ts",
+    "api": "playwright test --config ./playwright.config.ts --project=api-tests"
   },
   "author": "",
   "license": "ISC",
