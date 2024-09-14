@@ -1,5 +1,5 @@
 {
-  "name": "playwright-google-navigation",
+  "name": "playwright-petcircle",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.46.1",
+    "@playwright/test": "^1.47.1",
     "allure-playwright": "^3.0.0-beta.10",
     "typescript": "^4.3.5"
   },

@@ -137,7 +137,7 @@ To align with the latest industry standards, we recommend the following modern t
 
 1. API Testing: 
    - Postman: For manual and automated API testing
-   - REST Assured: For API testing in Java projects
+   - Axios : For API testing in Javascript projects
 
 2. Contract Testing:
    - Pact: For consumer-driven contract testing
@@ -150,8 +150,7 @@ To align with the latest industry standards, we recommend the following modern t
    - JUnit 5: For Java components
 
 5. Integration Testing:
-   - Cypress: For end-to-end testing of web applications
-   - TestContainers: For integration testing with containerized dependencies
+   - Playwright or Cypress: For end-to-end testing of web applications
 
 6. Continuous Integration/Continuous Deployment (CI/CD):
    - Jenkins: For automation of building, testing, and deployment

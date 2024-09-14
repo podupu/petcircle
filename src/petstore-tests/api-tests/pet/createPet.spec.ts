@@ -12,20 +12,16 @@ test.describe("Pet endpoint : POST Method", () => {
     });
     const endTime = Date.now();
 
-    // Status code check
     expect(response.status()).toBe(200);
 
     const responseBody = await response.json();
 
-    // Response body structure check
     expect(responseBody).toBeTruthy();
     expect(responseBody.id).toBe(pet.id);
     expect(responseBody).toEqual(pet);
 
-    // Content-type check
     expect(response.headers()["content-type"]).toBe("application/json");
 
-    // Response time check
     expect(endTime - startTime).toBeLessThan(2000);
   });
 

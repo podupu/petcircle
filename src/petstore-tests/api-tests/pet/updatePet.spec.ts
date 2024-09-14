@@ -48,7 +48,7 @@ test.describe("Pet endpoint : PUT Method", () => {
   test("should return 404 for non-existing pet", async ({ request }) => {
     let random = getRandomInt(1, 1000);
     const response = await request.put("pet", {
-      data: { id: random, name: "Ghost" },
+      data: { id: random, name: "Avinash" },
     });
     expect(response.status()).toBe(404);
   });

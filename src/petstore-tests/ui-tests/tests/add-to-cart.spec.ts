@@ -2,7 +2,6 @@ import { test, expect } from "@playwright/test";
 import { LoginPage } from "../pages/loginPage";
 import { InventoryPage } from "../pages/inventoryPage";
 
-// Define filters in an array
 const addItemsByFilter = ["lohi", "hilo", "az", "za"]; 
 
 addItemsByFilter.forEach((filterOption) => {
