@@ -15,14 +15,7 @@ const config: PlaywrightTestConfig = {
       use: {
         browserName: "chromium",
       },
-      testDir: "src/petstore-tests/ui-tests/tests",
-    },
-    {
-      name: "api-tests",
-      use: {
-        baseURL: "https://petstore.swagger.io/v2/",
-      },
-      testDir: "src/petstore-tests/api-tests/pet",
+      testDir: "src/kindred-tests/ui-tests/tests",
     },
   ],
   reporter: [

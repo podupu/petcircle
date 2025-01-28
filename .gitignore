@@ -2,7 +2,7 @@
 yarn.lock
 package-lock.json
 test-results
-performanceTests
+.idea
 
 # Node modules
 node_modules/
